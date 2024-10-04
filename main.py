@@ -1,10 +1,6 @@
-import disnake
-import json
-import datetime
-import random
-import asyncio
+import disnake, datetime, json, random, asyncio
 from disnake.ext import commands, tasks
-from keep_alive import keep_alive
+
 
 with open('config.json') as e:
   infos = json.load(e)
@@ -49,5 +45,4 @@ async def on_member_update(before, after):
         ls.write(f'{lr} > online > {hora}\n')
       ls.close()
 
-keep_alive()
 bot.run(token)
