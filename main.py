@@ -18,7 +18,6 @@ async def on_ready():
 
   print(f'Nome: {bot.user}  ID: {bot.user.id}')
   print(f'Membros Globais: {len(bot.users)}')
-  print(f'Servidores Globais: {len(bot.guilds)}')
   print(f'Ping {pong} ms')
   #await bot.change_presence(status=disnake.Status.idle, activity=disnake.Activity(type=disnake.ActivityType.listening, name=f''))
 
